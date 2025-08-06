@@ -1,0 +1,29 @@
+.ProductList {
+  .productList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .productCard {
+    border: 1px solid black;
+    width: 300px;
+    padding: 5px;
+    background-color: var(--lite1);
+
+    img {
+      width: 100%;
+    }
+
+    div.name_price {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 1.25em;
+    }
+
+  }
+}

@@ -1,0 +1,11 @@
+:root {
+  /* CSS HEX */
+  --dark1: #006ba6ff;
+  --lite1: #adeee3ff;
+  --lite2: #ffbc42ff;
+  --danger: #d81159ff;
+  --dark2: #8f2d56ff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark1);
+  background-color: var(--lite2);
+}
