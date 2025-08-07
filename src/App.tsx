@@ -10,8 +10,17 @@ export function App() {
   useEffect(() => {
     const url = `/api/products`;
     fetch(url)
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
       .then(prods => setProducts(prods))
+      .catch(error => {
+        console.error('Failed to fetch products:', error);
+        setProducts([]);
+      });
   }, []);
 
   return (
