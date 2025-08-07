@@ -1,4 +1,4 @@
-import { ReactElement } from "react"
+import { ReactElement, useEffect } from "react"
 import { Product } from './types/Product'
 import './ProductList.css'
 import { RenderProduct } from "./RenderProduct"
@@ -20,5 +20,3 @@ export const ProductList = (props: Props): ReactElement => {
     </section>
   </div>
 }
-
-//const prodNameStyle = { fontWeight: "bold", fontSize: "1.2em" }

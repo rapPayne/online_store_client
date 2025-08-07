@@ -1,0 +1,56 @@
+.RenderProduct {
+  border: 1px solid black;
+  flex-basis: 300px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  padding: 0px;
+  background-color: var(--lite1);
+
+  img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  >div {
+    padding: 10px;
+
+    div.name_price {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 1.25em;
+    }
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--dark3);
+    /* light gray */
+    color: var(--lite3);
+    border: 1px solid var(--dark2);
+    border-radius: 8px 14px 14px 8px;
+    /* slightly asymmetrical */
+    position: relative;
+    box-shadow: 2px 2px 3px var(--dark1);
+  }
+
+  /* hole to simulate string-punched tag */
+  .tag::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: var(--lite1);
+    border: 1px solid var(--dark1);
+    border-radius: 50%;
+  }
+
+}
