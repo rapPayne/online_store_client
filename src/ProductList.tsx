@@ -1,7 +1,7 @@
 import { ReactElement, useEffect } from "react"
 import { Product } from './types/Product'
 import './ProductList.css'
-import { RenderProduct } from "./RenderProduct"
+import { Product } from "./Product"
 
 type Props = {
   products: Array<Product>,
@@ -16,7 +16,7 @@ export const ProductList = (props: Props): ReactElement => {
     <h1>{props.title}</h1>
     <section className="productList"  >
       {listOfProducts
-        .map(product => <RenderProduct product={product} />)}
+        .map(product => <Product product={product} />)}
     </section>
   </div>
 }

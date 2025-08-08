@@ -1,9 +1,9 @@
 import { useParams } from "react-router"
 
-export const ContactUs = () => <h1>ContactUs</h1>
+export const ContactUs = () => <h1>Contact Us</h1>
 export const Login = () => <h1>Login</h1>
-
-export const Checkout = () => <h1>Checkout</h1>
+// export const X = () => <></>
+export const Checkout = () => <h1>Check out</h1>
 export const FourOhFourWinkWink = () => {
   return (
     <>
@@ -24,7 +24,7 @@ export const Product = () => {
   return (
     <>
       <h1>Product details</h1>
-      You're looking at the deets for product {id}
+      <p>You're looking at the deets for product {id}</p>
     </>
   )
 }

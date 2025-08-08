@@ -1,12 +1,12 @@
-import { Product } from "./types/Product"
+import { Product as ProductType } from "./types/Product"
 import { Link } from "react-router";
-import './RenderProduct.css'
+import './Product.css'
 
 type Props = {
-  product: Product
+  product: ProductType
 }
 
-export function RenderProduct({ product }: Props) {
+export function Product({ product }: Props) {
   return (
     <section className="RenderProduct">
       <Link to={"/product/" + product.id}>

@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
@@ -15,6 +16,7 @@ export default defineConfig({
         'src/test/',
         '**/*.d.ts',
         'vite.config.ts',
+        '.eslintrc.cjs',
         'src/main.tsx'
       ]
     }
