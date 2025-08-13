@@ -1,5 +1,5 @@
 import { ReactElement, useEffect } from "react"
-import { Product } from './types/Product'
+import { Product as ProductType } from './types/Product'
 import './ProductList.css'
 import { Product } from "./Product"
 
