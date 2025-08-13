@@ -8,7 +8,7 @@ export function App() {
   const [products, setProducts] = useState<ProductType[]>([]);
   console.log(products)
   useEffect(() => {
-    const url = `/api/products`;
+    const url = `${import.meta.env.VITE_ROOT_API_URL}api/products`;
     fetch(url)
       .then(res => {
         if (!res.ok) {
