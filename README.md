@@ -7,7 +7,7 @@ This is a simple online store application built with React. It allows users to b
 1. Set the API URL in the `.env` file.
    For example:
    ```
-   SERVER_API_URL=http://localhost:5000
+   VITE_ROOT_API_URL=https://online-store-server-yvmh.onrender.com/
    ```
 1. Run this application with `npm start`.
 1. 
